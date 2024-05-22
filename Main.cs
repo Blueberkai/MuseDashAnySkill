@@ -22,7 +22,7 @@ namespace AnySkill
         public static Menu Instance;
         public static string CurrentDirectory = string.IsNullOrEmpty(Assembly.GetExecutingAssembly().Location) ? Environment.CurrentDirectory : Path.GetDirectoryName(Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location));
         KeyCode MenuKey = KeyCode.F10;
-        public static bool ShowMenu = false;
+        public static bool ShowMenu = true;
         void OnGUI()
         {
             if (ShowMenu && Main.FUCK)
